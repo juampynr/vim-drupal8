@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>VIM and Drupal 8</title>
+
+    <meta name="description" content="Tips on how to work in Drupal 8 using VIM">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <div>
+            <h2>VIM and Drupal 8</h2>
+            <h3>Drupal Madrid - January 2016</h3>
+            <p>Juampy NR - <a href="https://twitter.com/juampynr" target="_blank">@juampynr</a></p>
+          </div>
+        </section>
+
+        <section>
+          <img align="left" src="images/Juampy-headshot.jpg" width="200"/>
+          <img align="right" src="images/lullabot.jpg" width="200"/>
+          Juampy NR - <a href="https://twitter.com/juampynr" target="_blank">@juampynr</a></br>
+          </br>
+          Senior Developer</br></br>
+          </br>
+          <div style="margin: 0px auto;padding-left: 200px;">
+            <a href="http://www.amazon.com/Drush-Developers-Juampy-Novillo-Requena-ebook/dp/B00SYOBXYG" target="_blank"><img src="images/drush_book.jpg" width="200"/></a>
+          </div>
+        </section>
+
+        <section>
+          <h2>Index</h2>
+          <ul>
+            <li>Setup</li>
+            <li>Basic editing</li>
+            <li>Directory browsing</li>
+            <li>Searching</li>
+            <li>Navigating through code</li>
+            <li>Window management</li>
+            <li>Debugging</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Thanks! Questions?</h2>
+          <p>
+            <img align="left" src="images/Juampy-headshot.jpg" width="200"/>
+            <img align="right" src="images/lullabot.jpg" width="200"/>
+            <a href="https://twitter.com/juampynr" target="_blank">@juampynr</a>
+          </p>
+          <p>
+            <div style="margin: 0px auto;padding-top: 200px;">
+              Want to work at Lullabot? Then talk to me.
+            </div>
+          </p>
+        </section>
+      </div>
+
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ],
+        keyboard: {
+          39: 'next',
+          37: 'prev'
+        }
+      });
+
+    </script>
+
+  </body>
+</html>

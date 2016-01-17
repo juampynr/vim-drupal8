@@ -1,2 +1,1 @@
-# vim-drupal8
-Vim &amp; Drupal 8
+View online at http://juampynr.github.io/vim-drupal8
